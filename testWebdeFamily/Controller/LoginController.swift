@@ -50,6 +50,8 @@ class LoginController: UIViewController {
             let controller = storyboard.instantiateViewController(withIdentifier: "List")
             let navigationController = UINavigationController(rootViewController: controller)
             show(navigationController, sender: nil)
+            emailTextField.text = ""
+            passwordTextField.text = ""
             return
             
         } else {
